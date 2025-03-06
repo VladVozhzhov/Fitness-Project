@@ -169,6 +169,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .table {
     display: table;
   }
