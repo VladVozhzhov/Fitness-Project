@@ -11,5 +11,4 @@ function otherMenu() {
         });
 }
 
-// Call the function directly
 otherMenu();
