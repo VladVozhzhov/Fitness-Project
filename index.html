@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
+    <!-- All the packs of styles are in ./src/index.css-->
     <title>Fitness</title>
   </head>
   <body class="bg-radial-[at_50%_75%] to-indigo-900 via-blue-400 from-sky-200 to-90% text-l">
+
+    <!-- Top bar with navigation links -->
+
     <section>
       <header class="fixed flex bg-gradient-to-b from-blue-600 to-sky-400 to-50% top-0 w-full lg:w-auto">
         <nav class="flex text-lg sm:w-screen md:w-screen items-center justify-center mx-auto md:font-bold md:text-2xl md:mx-4 lg:text-3xl">
@@ -32,6 +36,8 @@
       </header>
     </section>
 
+    <!-- About section -->
+
     <div class="container mx-auto border-black border">
       <section class="bg-gradient-to-tr from-fuchsia-900 to-cyan-900 from-40% " id="about">
         <h2 class="pt-12 ml-7 mt-12 text-4xl font-bold md:text-6xl md:mb-1">About</h2>
@@ -47,14 +53,19 @@
           <p class="p-style">We believe that fitness is a journey, and we are here to support you every step of the way. Our community is built on encouragement, motivation, and accountability. Together, we can achieve great things!</p>
         </div>
       </section> 
+
+      <!-- Pricing section -->
+
       <section class="bg-gradient-to-bl from-fuchsia-900 to-cyan-900 from-40% md:text-6xl" id="pricing">
         <h2 class="text-4xl font-bold text-center pt-16 md:mb-20 md:text-6xl">Pricing</h2>
         <div class="flex flex-wrap justify-center space-x-4">
+
+          <!-- Basic Plan -->
           
-          <div class="max-w-sm md:max-w-md rounded shadow-lg bg-white m-4">
+          <div class="card_container">
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 md:text-4xl">Basic Plan</div>
-              <p class="text-gray-700 text-base md:text-2xl">
+              <div class="card_plan">Basic Plan</div>
+              <p class="card_p">
                 Perfect for beginners who are just starting their fitness journey.
               </p>
             </div>
@@ -64,11 +75,13 @@
               <span class="card-feature">Group classes</span>
             </div>
           </div>
+
+          <!-- Standard Plan -->
           
-          <div class="max-w-sm md:max-w-md rounded shadow-lg bg-white m-4">
+          <div class="card_container">
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 md:text-4xl">Standard Plan</div>
-              <p class="text-gray-700 text-base md:text-2xl">
+              <div class="card_plan">Standard Plan</div>
+              <p class="card_p">
                 Ideal for those who want to take their fitness to the next level.
               </p>
             </div>
@@ -79,11 +92,13 @@
               <span class="card-feature">Personal training</span>
             </div>
           </div>
+
+          <!-- Premium Plan -->
           
-          <div class="max-w-sm md:max-w-md rounded shadow-lg bg-white m-4">
+          <div class="card_container">
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 md:text-4xl">Premium Plan</div>
-              <p class="text-gray-700 text-base md:text-2xl">
+              <div class="card_plan">Premium Plan</div>
+              <p class="card_p">
                 Best for fitness enthusiasts who want comprehensive support.
               </p>
             </div>
