@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- All the packs of styles are in ./src/index.css-->
-    <title>Contact Us</title>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</head>
-<body class="h-screen flex items-center justify-center bg-gradient-to-tr from-gray-950 to-blue-950 relative">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- All the packs of styles are in ./src/index.css-->
+        <title>Contact Us</title>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    </head>
+    <body class="h-screen flex items-center justify-center bg-gradient-to-tr from-gray-950 to-blue-950 relative">
 
-    <!-- Particles background -->
+        <!-- Particles background -->
 
-    <div id="particles-js" class="absolute top-0 left-0 w-full h-full"></div>
+        <div id="particles-js" class="absolute top-0 left-0 w-full h-full"></div>
 
-    <!-- Contact form container -->
+        <!-- Contact form container -->
 
-    <div class="w-full max-w-md p-8 border-4 border-black rounded-2xl bg-black relative z-10">
+        <div class="w-full max-w-md p-8 border-4 border-black rounded-2xl bg-black relative z-10">
 
-        <!-- Header -->
+            <!-- Header -->
 
-        <header class="border bg-white rounded mx-24">
-            <h1 class="text-center text-2xl font-bold">Contact Us</h1>
-            <p class="text-center text-md font-bold underline focus:opacity-80 hover:opacity-80"><a href="index.html">Back to Home Page</a></p>
-        </header>
+            <header class="border bg-white rounded mx-24">
+                <h1 class="text-center text-2xl font-bold">Contact Us</h1>
+                <p class="text-center text-md font-bold underline focus:opacity-80 hover:opacity-80"><a href="index.html">Back to Home Page</a></p>
+            </header>
 
-        <!-- Contact form -->
-        
-        <main class="text-white">
-
+            <!-- Contact form -->
             
+            <main class="text-white">
 
-            <form action="/submit_contact" method="post">
-
-                <!-- Name input -->
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required class="contact-input"><br>
-
-                <!-- Email input -->
                 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required class="contact-input"><br>
 
-                <!-- Message inpot -->
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required class="contact-input"></textarea><br>
-                
-                <!-- Submit button -->
+                <form action="/submit_contact" method="post">
 
-                <input type="submit" value="Submit" class="w-full p-2 bg-blue-500 text-white rounded">
-            </form>
-        </main>
-    </div>
-    <script src="js/particles.js"></script>
+                    <!-- Name input -->
 
-</body>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required class="contact-input"><br>
+
+                    <!-- Email input -->
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="contact-input"><br>
+
+                    <!-- Message inpot -->
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required class="contact-input"></textarea><br>
+                    
+                    <!-- Submit button -->
+
+                    <input type="submit" value="Submit" class="w-full p-2 bg-blue-500 text-white rounded">
+                </form>
+            </main>
+        </div>
+        <script>
+            particlesJS.load('particles-js', 'particles-config-contact.json', () => {
+            console.log('particles.js loaded - callback');
+            });
+        </script>
+    </body>
 </html>

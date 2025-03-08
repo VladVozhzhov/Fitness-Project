@@ -5,7 +5,7 @@
 }
 
 .card_container {
-  @apply max-w-sm md:max-w-md rounded shadow-lg bg-white m-4;
+  @apply max-w-sm md:max-w-md rounded-2xl shadow-lg bg-stone-500 m-4 border-4 border-black;
 }
 
 .card_p {
@@ -17,7 +17,7 @@
 }
 
 .card-feature {
-  @apply flex flex-col justify-center items-center bg-gray-200 rounded-4xl px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 md:text-2xl md:my-1 ;
+  @apply flex flex-col justify-center items-center bg-gray-900 rounded-4xl px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 md:text-2xl md:my-1 ;
 }
 
 .p-style {
