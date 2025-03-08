@@ -2,4 +2,12 @@
 
 .card-feature {
     @apply flex flex-col justify-center items-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 md:text-2xl md:my-1 ;
-  }
+}
+
+.img-style {
+  @apply md:w-64 md:h-auto lg:w-[20rem];
+}
+
+.p-style {
+  @apply md:text-2xl lg:text-3xl mt-4;
+}
